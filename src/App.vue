@@ -1,28 +1,44 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <div class="container">
+<!--            <show-down />-->
+<!--            <auto-size />-->
+<!--            <DateFNS />-->
+<!--            <picker />-->
+<!--            <ctk-picker />-->
+<!--            <win-picker />-->
+            <vue-js-picker />
+        </div>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    // import ShowDown from "./components/show-down/ShowDown";
+    // import AutoSize from "./components/auto-size/AutoSize";
+    // import DateFNS from "./components/date-fns/DateFNS";
+    // import picker from "./components/persian-datetime-picker/Picker";
+    // import CtkPicker from "./components/ctk-picker/CtkPicker";
+    // import WinPicker from "./components/window-picker/WinPicker";
+    import VueJsPicker from "./components/vuejs-picker/VueJsPicker";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'App',
+        components: {
+            VueJsPicker
+            // WinPicker,
+            // DateFNS
+            // AutoSize,
+            // ShowDown,
+            // picker,
+            // CtkPicker,
+        },
+    }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    .container {
+        margin: 20% 20%;
+        padding: 20px;
+        outline: 3px dashed red;
+    }
 </style>
